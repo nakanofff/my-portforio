@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+}
+.first-view{
+	display: block;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #242939;
+	transition: all 0.5s;
+}
+.first-view{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.first-text{
+	color: #F0F0F0;
+	font-size: 62px;
+	font-family: 'Poiret One', cursive;
+}
+
+.component-wrapper{
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+.component-name{
+	display: flex;
+	-ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+.shimano{
+	color: #F0F0F0;
+	font-size: 25px;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-style: normal;
+	margin: 22px;
+}
+.shimano-span{
+	color: #106091 !important;
+}
+.campanolo{
+	color: #F0F0F0;
+	font-size: 25px;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-style: normal;
+	margin: 22px;
+}
+.campanolo-span{
+	color: #262525 !important;
+}
+.sram{
+	color: #F0F0F0;
+	font-size: 25px;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-style: normal;
+	margin: 22px;
+}
+.sram-span{
+	color: #F73333 !important;
+}
+/*カンパニョーロ*/
+.campagnolo-shift-lever{
+	display: flex;
+	position: fixed;
+	z-index: 10;
+	right: 10px;;
+	bottom: 10px;
+}
+.campagnolo-shift{
+	
+}
+.campagnolo-shiftup{
+	margin-top: 150px;
+	font-family: 'Poiret One', cursive;
+}
+.campagnolo-shiftdown{
+	margin-top: 200px;
+	font-family: 'Poiret One', cursive;
+}
+.campagnolo-lever{
+	background-repeat: no-repeat;
+	width: 162px;
+	height: 511px;
+}
+/*シマノ*/
+.shimano-shift-lever{
+	display: none;
+	position: fixed;
+	z-index: 10;
+	right: 10px;;
+	bottom: 10px;
+}
+.shimano-shift{
+	
+}
+.shimano-shiftup{
+	margin-top: 150px;
+}
+.shimano-shiftdown{
+	margin-top: 200px;
+}
+.shimano-lever{
+	background-repeat: no-repeat;
+	width: 162px;
+	height: 511px;
+}
+/*スラム*/
+.sram-shift-lever{
+	display: none;
+	position: fixed;
+	z-index: 10;
+	right: 10px;;
+	bottom: 10px;
+}
+.sram-shift{
+	
+}
+.sram-shiftup{
+	margin-top: 150px;
+	font-family: 'Poiret One', cursive;
+}
+.sram-shiftdown{
+	margin-top: 200px;
+	font-family: 'Poiret One', cursive;
+}
+.sram-lever{
+	background-repeat: no-repeat;
+	width: 162px;
+	height: 511px;
+}
+/* メニュー　*/
+.menu{
+	background-image: url(menu-background.png);
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	transition: 1s cubic-bezier(.46,.01,.63,.99);
+}
+.menu-ul{
+	padding: 0;
+}
+.menu-ul li{
+	list-style: none;
+	padding-left: 50px;
+	overflow: hidden;
+}
+.menu-ul::after{
+	border-bottom: 1px solid #ffffff;
+	animation-name: bottom-border;
+	animation-duration: 3s;
+}
+.menu-ul li a{
+	color: #ffffff;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-size: 96px;
+	text-decoration: none;
+}
+@keyframes menu-open{
+	0%{
+		right: -100px;
+	}
+	100%{
+		right: 0;
+	}
+}
+.menu-bottun{
+	animation-name: menu-open;
+	position: fixed;
+	z-index: 800;
+	top: 10%;
+	overflow: hidden;
+	background-color: #242E4D;
+	animation-delay: 4s;
+	animation-direction: 3s;
+}
+.menu-bottun p{
+	color: #ffffff;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-size: 50px;
+	margin: 5px 5px 5px 80px;
+}
+
+.home{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("background.png");
+}
+.title-wrapper{
+	display: block;
+	margin: auto 0;
+}
+.title-wrapper h1{
+	color: #F0F0F0;
+	font-size: 60px;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-style: normal;
+	letter-spacing: -40;
+	padding-top: 351px;
+	padding-left: 229px;
+	margin: 0;
+}
+.title-wrapper h2{
+	color: #F0F0F0;
+	font-size: 22px;
+	font-family: 'Sawarabi Mincho', sans-serif;
+    font-weight: 400;
+	letter-spacing: -50;
+    font-style: normal;
+	padding-top: 4px;
+	padding-left: 229px;
+	margin: 0;
+}
+.main{
+	
+	z-index: 1;
+	top: 0vh;
+	bottom: 0vh;
+	left: 0;
+	right: 0;
+	transition: all 0.8s cubic-bezier(.22,.48,.65,.16);
+}
+
+
+.about{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("background.png");
+}
+.image-wrapper{
+	display: flex;
+	align-items: center;
+}
+.main-image{
+	background-image: none;
+	width: 80vw;
+	height: 80vh;
+}
+.Self-introduction{
+	position: absolute;
+	z-index: 10;
+	top: 130%;
+	left: 20%;
+	color: #ffffff;
+}
+.Self-introduction h2{
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+	font-size: 64px;
+	margin-bottom: 5px;
+}
+.Self-introduction p{
+	font-size: 16px;
+	font-family: 'Sawarabi Mincho', sans-serif;
+    font-weight: 300;
+	border-bottom: 1.5px solid #242939;
+}
+.Self-introduction p a{
+	color: #ffffff;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+	font-size: 24px;
+	text-decoration: none;
+}
+/* 3ページ目ここから*/
+.skills{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("background.png");
+	padding-top: 47px;
+	padding-left: 144px;
+}
+.section-title{
+	color: #F0F0F0;
+	font-size: 47px;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.skills-title{
+	border-left: 11px solid #F0F0F0;
+}
+.skills-title h3{
+	color: #F0F0F0;
+	font-size: 32px;
+	font-family: kan415typos-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	padding-left: 11px;
+	margin: 0;
+	margin-bottom: 4px !important;
+	line-height: 34px;
+}
+.skills-title h4{
+	color: #F0F0F0;
+	font-size: 16px;
+	font-family: kan415typos-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	margin-left: 11px;
+	margin: 0;
+	padding-left: 11px;
+}
+.skills-wrapper{
+	
+}
+.skill-content{
+	list-style: decimal;
+	color: #F0F0F0;
+	font-size: 26px;
+	font-family: kan415typos-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.skill-content p{
+	margin: 0 !important;
+}
+/* 3ページ目ここまで*/
+.web-works{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("background.png");
+}
+.other-works{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("background.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

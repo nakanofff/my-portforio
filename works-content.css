@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url("background.png");
+	padding: 0;
+	margin: 0;
+}
+.main-image{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	background: linear-gradient(rgba(248,243,81,0.8),rgba(0,0,0,0.00));
+}
+.work-image{
+	background-image: url("KoyamaTomoyaenter.png");
+	background-position: center;
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+}
+.work-title{
+	
+}
+.main-title{
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	color: #ffffff;
+	font-family: 'Sawarabi Mincho', sans-serif;
+    font-weight: 400;
+	letter-spacing: -50;
+    font-style: normal;
+}
+.main-title:after,
+.main-title:before{
+	content: "";
+	height: 1px;
+	flex-grow: 1;
+	background-color: #fff;
+	display: block;
+}
+.main-title:after{
+	margin-left: .4em;
+}
+.main-title:befor{
+	margin-right: .4em;
+}
+.work-title p{
+	color: #ffffff;
+	font-size: 18px;
+	padding-right: 8px;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.work-title p a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #ffffff;
+	font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.about1{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.main-message{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
